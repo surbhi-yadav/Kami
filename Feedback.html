@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images_Main/favicon.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Josefin+Sans&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {box-sizing: border-box;}
+        input[type=text], select, textarea {    
+            width: 300px;    
+            padding: 12px;    
+            border: 1px solid rgb(70, 68, 68);    
+            border-radius: 4px;    
+            resize: vertical;
+            font-family: 'Arvo', serif;
+            margin: 5px 0;
+        }   
+        input[type=email], select, textarea {    
+            width: 300px;    
+            padding: 12px;    
+            border: 1px solid rgb(70, 68, 68);    
+            border-radius: 4px;    
+            resize: vertica;
+            font-family: 'Arvo', serif; 
+            margin: 5px 0;
+        }
+        label {    
+            padding: 12px 12px 12px 0;    
+            display: inline-block;
+            margin: 5px 0;
+             
+        }
+        input[type=submit] {    
+            background-color: #db9b82;    
+            color: white;    
+            padding: 12px 20px;    
+            border: none;    
+            border-radius: 4px;    
+            cursor: pointer;    
+            float: center;
+            font-family: 'Arvo', serif; 
+            margin: 5px 0;
+        }
+        input[type=reset] {    
+            background-color: #db9b82;    
+            color: white;    
+            padding: 12px 20px;    
+            border: none;    
+            border-radius: 4px;    
+            cursor: pointer;    
+            float: center;
+            font-family: 'Arvo', serif;
+            margin: 5px 0; 
+        }
+        input[type=submit]:hover {    
+            background-color: #b6ada6;
+        }
+        input[type=reset]:hover {    
+            background-color: #b6ada6;
+        }
+    </style>
+    <title>Kami</title>
+</head>
+<body bgcolor="#efdbd4" align="center">
+    <h1 style="font-family: 'Dancing Script', cursive; color: #252525; font-size: 50px;">Customer Feedback Form</h1>
+    <h5 style="font-family: 'Arvo', serif; letter-spacing: 2px; color: #1f2120;">LET'S CHAT ABOUT YOUR EXPERIENCE</h5> <br>
+    <form action="Thanks.html" method="GET">
+            <table width="700" align="center" style="font-family: 'Arvo', serif;">
+                <tr>
+                    <td>
+                        <label for="fname">Enter your First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" id="fname" placeholder="Your First Name.." required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname">Enter your Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" id="lname" placeholder="Your Last Name.." required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Enter your Mail Id:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="mailid" id="email" placeholder="Your Mail Id.." required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="country">Select your Country:</label>
+                    </td>
+                    <td>
+                        <select name="country" id="country" required>
+                            <option value="None">Select Country</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Canada">Canada</option>
+                            <option value="USA">USA</option>
+                            <option value="India" selected>India</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Japan">Japan</option>
+                            <option value="China">China</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select your Gender:
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="Male" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Female" value="Female" checked>
+                        <label for="Female">Female</label>
+                        <input type="radio" name="gender" id="Other" value="Other">
+                        <label for="Other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        How do you rate your overall experience?
+                    </td>
+                    <td>
+                        <input type="radio" name="experience" id="radio_experience" value="Bad">
+                        <label for="experience1">Bad</label>
+                        <input type="radio" name="experience" id="radio_experience" value="Average">
+                        <label for="experience2">Average</label>
+                        <input type="radio" name="experience" id="radio_experience" value="Good" checked>
+                        <label for="experience3">Good</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="feedback">Your Feedback:</label>
+                    </td>
+                    <td>
+                        <textarea name="subject" id="subject" placeholder="Write something.." style="height: 200px;" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="Reset">
+                    </td>
+                    <td>
+                        <input type="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
