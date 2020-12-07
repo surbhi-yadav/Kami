@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Images_Main/favicon.ico" type="image/x-icon" / >
+    <link rel="icon" href="Images_Main/favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Josefin+Sans&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <title>Kami</title>
@@ -23,16 +23,16 @@
             <td>
                 <table align="center" style="width: 45%; text-align: center; font-size: large; font-family: 'Josefin Sans', sans-serif; color: #1f2120;">
                     <tr>
-                        <td width=18%>
+                        <td width="18%">
                             <a href="About.html">About</a>
                         </td    >
-                        <td width=30%>
+                        <td width="30%">
                             <a href="Fabric.html">Fabrics Used</a>
                         </td>
-                        <td width=29%>
+                        <td width="29%">
                             <a href="CSR.html">CSR Practices</a> 
                         </td>
-                        <td width=23%>
+                        <td width="23%">
                             <a href="Feedback.html">Feedback</a> 
                         </td>
                     </tr>
@@ -101,9 +101,20 @@
             <td style="text-align: center; width: 100%; font-family: 'Dancing Script', cursive; background-color: #f6e0e2; font-size: 20px; padding: 10px; padding-top: 13px; padding-bottom: 5px;">
                 This website was made for a college assignment. All the pictures belong to their respected owners. <br>
                 Contact us at kamidesigns@gmail.com <br> <br>
-                <img src="https://img.icons8.com/wired/64/000000/instagram-new.png"/>
-                <img src="https://img.icons8.com/wired/64/000000/twitter.png"/>
-                <img src="https://img.icons8.com/wired/64/000000/pinterest.png"/>
+                <img src="https://img.icons8.com/wired/64/000000/instagram-new.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)"  alt="Smiley" width="64" height="64"/>
+                <img src="https://img.icons8.com/wired/64/000000/twitter.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)" alt="Smiley" width="64" height="64"/>
+                <img src="https://img.icons8.com/wired/64/000000/pinterest.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)"  alt="Smiley" width="64" height="64"/>
+                <script>
+                    function bigImg(x) {
+                      x.style.height = "128px";
+                      x.style.width = "128px";
+                    }
+                    
+                    function normalImg(x) {
+                      x.style.height = "32px";
+                      x.style.width = "32px";
+                    }
+                </script>
             </td>
         </tr>
     </table>

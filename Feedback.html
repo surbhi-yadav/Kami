@@ -6,6 +6,11 @@
     <link rel="icon" href="Images_Main/favicon.ico" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Josefin+Sans&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <script>
+        function displayDate() {
+            document.getElementById("showDate").innerHTML = Date();
+        }
+    </script>
     <style>
         * {box-sizing: border-box;}
         input[type=text], select, textarea {    
@@ -59,6 +64,17 @@
         }
         input[type=reset]:hover {    
             background-color: #b6ada6;
+        }
+        button[type=button] {    
+            background-color: #db9b82;    
+            color: white;    
+            padding: 12px 20px;    
+            border: none;    
+            border-radius: 4px;    
+            cursor: pointer;    
+            float: center;
+            font-family: 'Arvo', serif; 
+            margin: 5px 0;
         }
     </style>
     <title>Kami</title>
@@ -149,6 +165,12 @@
                     </td>
                     <td>
                         <input type="Submit">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="displayDate()">Show Date</button>
+                        <b><p id="showDate"></p></b>
                     </td>
                 </tr>
             </table>
